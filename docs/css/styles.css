@@ -658,6 +658,21 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
 }
 
+/* Ocultar controles de volumen y mute solo en el video de drone */
+#drone .drone-video-container video::-webkit-media-controls-volume-slider,
+#drone .drone-video-container video::-webkit-media-controls-mute-button {
+    display: none !important;
+}
+#drone .drone-video-container video::-moz-media-controls-volume-slider,
+#drone .drone-video-container video::-moz-media-controls-mute-button {
+    display: none !important;
+}
+#drone .drone-video-container video::-ms-media-controls-volume-slider,
+#drone .drone-video-container video::-ms-media-controls-mute-button {
+    display: none !important;
+}
+}
+
 /* Responsive para Drone */
 /* Pantallas grandes (24" y superiores) */
 @media (min-width: 1400px) {
@@ -1291,7 +1306,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .overlay-text h1 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: normal;
     margin: 0 0 15px 0;
     text-decoration: none;
