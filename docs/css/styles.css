@@ -300,6 +300,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .progress-symbol {
     font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Why UGC: títulos de iconos en blanco */
+#why-ugc .stats-text h4 {
+    color: #ffffff !important;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 500;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
