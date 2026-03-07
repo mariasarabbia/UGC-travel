@@ -1,0 +1,17 @@
+/.vs/
+/.vscode/
+/node_modules/
+*.log
+.env
+.DS_Store
+Thumbs.db
+/bin/
+/obj/
+.idea/
+
+# Build outputs
+/dist/
+
+# Media exports (optional - uncomment if you don't want large media tracked)
+#/media/video/
+#/media/images/
