@@ -10,7 +10,8 @@
 /* Sección Offered Services (servicios ofrecidos) */
 #offered-services {
     padding: 60px 0;
-    background-color: #f7f3ee; /* tono suave y neutro para destacar la sección */
+    background-color: #f7f3ee;
+    /* tono suave y neutro para destacar la sección */
     color: #5f5a4e;
 }
 
@@ -81,7 +82,8 @@
 }
 
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -105,7 +107,12 @@ html, body {
 }
 
 /* Estilos generales para títulos */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'FuenteTitulos', Georgia, serif;
 }
 
@@ -116,7 +123,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #inicio {
-    min-height: 100vh; /* Ocupa al menos toda la pantalla */
+    min-height: 100vh;
+    /* Ocupa al menos toda la pantalla */
 }
 
 /* Sección About Me */
@@ -162,22 +170,22 @@ h1, h2, h3, h4, h5, h6 {
     #about-me {
         padding: 30px 0 60px 0;
     }
-    
+
     .about-content {
         padding: 10px 20px;
         text-align: center;
     }
-    
+
     .about-content h2 {
         font-size: 2rem;
         margin-bottom: 20px;
     }
-    
+
     .about-text p {
         font-size: 1.1rem;
         margin-bottom: 25px;
     }
-    
+
     .about-image {
         padding: 10px 20px;
         margin-top: 20px;
@@ -201,10 +209,10 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(95,90,78,0.05) 0%, transparent 50%);
+    background:
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(95, 90, 78, 0.05) 0%, transparent 50%);
     z-index: 1;
     pointer-events: none;
 }
@@ -267,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
     transition: left 0.5s ease;
 }
 
@@ -275,25 +283,30 @@ h1, h2, h3, h4, h5, h6 {
     left: 100%;
 }
 
-    .stats-item {
-        padding: 30px 20px;
-    }
-    .stats-item .stats-text h4 {
-        font-size: 1.2rem;
-    }
-    .stats-item .stats-text p {
-        font-size: 0.9rem;
-    }
-    .progress-svg {
-        width: 120px;
-        height: 120px;
-    }
-    .progress-number {
-        font-size: 1.4rem;
-    }
-    .progress-symbol {
-        font-size: 1rem;
-    }
+.stats-item {
+    padding: 30px 20px;
+}
+
+.stats-item .stats-text h4 {
+    font-size: 1.2rem;
+}
+
+.stats-item .stats-text p {
+    font-size: 0.9rem;
+}
+
+.progress-svg {
+    width: 120px;
+    height: 120px;
+}
+
+.progress-number {
+    font-size: 1.4rem;
+}
+
+.progress-symbol {
+    font-size: 1rem;
+}
 
 .stats-item .stats-text p {
     font-size: 0.95rem;
@@ -339,7 +352,8 @@ h1, h2, h3, h4, h5, h6 {
     stroke: #ffffff;
     stroke-width: 12;
     stroke-linecap: round;
-    stroke-dasharray: 283; /* 2 * PI * 45 = 282.74 */
+    stroke-dasharray: 283;
+    /* 2 * PI * 45 = 282.74 */
     stroke-dashoffset: 283;
     transition: stroke-dashoffset 2s ease-in-out;
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
@@ -364,10 +378,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes pulseGlow {
-    0%, 100% { 
+
+    0%,
+    100% {
         text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.3);
     }
-    50% { 
+
+    50% {
         text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 255, 255, 0.6);
     }
 }
@@ -401,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     position: relative;
     z-index: 2;
-    box-shadow: 
+    box-shadow:
         0 25px 50px rgba(0, 0, 0, 0.15),
         inset 0 1px 0 rgba(255, 255, 255, 0.8),
         0 0 30px rgba(255, 255, 255, 0.3);
@@ -456,6 +473,7 @@ h1, h2, h3, h4, h5, h6 {
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(2.5);
         opacity: 0;
@@ -464,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .multiplier-bg:hover {
     transform: scale(1.05);
-    box-shadow: 
+    box-shadow:
         0 35px 70px rgba(0, 0, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.8),
         0 0 40px rgba(255, 255, 255, 0.5);
@@ -475,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
     color: #5f5a4e;
     line-height: 1;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 3;
 }
@@ -485,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #5f5a4e;
     font-weight: 600;
     margin-left: 8px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 3;
 }
@@ -495,6 +513,7 @@ h1, h2, h3, h4, h5, h6 {
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1.5);
         opacity: 0;
@@ -506,57 +525,58 @@ h1, h2, h3, h4, h5, h6 {
     #why-ugc {
         padding: 40px 0;
     }
-    
+
     .why-ugc-column {
         margin-bottom: 30px;
     }
-    
+
     .why-ugc-content {
         padding: 10px 20px;
         text-align: center;
     }
-    
+
     .why-ugc-content h2 {
         font-size: 2rem;
         margin-bottom: 35px;
     }
-    
+
     .why-ugc-text p {
         font-size: 1.1rem;
         margin-bottom: 25px;
     }
-    
+
     .stats-item {
         margin-bottom: 20px;
         padding: 25px 15px;
     }
-    
+
     .progress-svg {
         width: 100px;
         height: 100px;
     }
-    
-    .progress-bg, .progress-bar {
+
+    .progress-bg,
+    .progress-bar {
         stroke-width: 8;
     }
-    
+
     .progress-number {
         font-size: 1.6rem;
     }
-    
+
     .progress-symbol {
         font-size: 1rem;
     }
-    
+
     .multiplier-bg {
         width: 100px;
         height: 100px;
     }
-    
+
     .multiplier-number {
         font-size: 1.6rem;
     }
-    
+
     .multiplier-symbol {
         font-size: 1.2rem;
     }
@@ -566,56 +586,56 @@ h1, h2, h3, h4, h5, h6 {
     #why-ugc {
         padding: 30px 0;
     }
-    
+
     .why-ugc-content {
         padding: 10px 20px;
         text-align: center;
     }
-    
+
     .why-ugc-content h2 {
         font-size: 2rem;
         margin-bottom: 35px;
     }
-    
+
     .why-ugc-text p {
         font-size: 1.1rem;
         margin-bottom: 25px;
     }
-    
+
     .stats-item {
         padding: 20px 10px;
     }
-    
+
     .stats-item .stats-text h4 {
         font-size: 1.2rem;
     }
-    
+
     .stats-item .stats-text p {
         font-size: 0.9rem;
     }
-    
+
     .progress-svg {
         width: 80px;
         height: 80px;
     }
-    
+
     .progress-number {
         font-size: 1.2rem;
     }
-    
+
     .progress-symbol {
         font-size: 0.8rem;
     }
-    
+
     .multiplier-bg {
         width: 80px;
         height: 80px;
     }
-    
+
     .multiplier-number {
         font-size: 1.2rem;
     }
-    
+
     .multiplier-symbol {
         font-size: 1rem;
     }
@@ -674,20 +694,74 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
-/* Responsive para Landscapes */
+
+/* Sección Services */
+#services {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-header h2 {
+    font-size: 2.5rem;
+    color: #5f5a4e;
+    margin-bottom: 0;
+}
+
+.services-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 500px;
+}
+
+.services-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.services-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.services-item:hover img {
+    transform: scale(1.05);
+}
+
+.services-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.services-item:hover video {
+    transform: scale(1.05);
+}
+
+/* Responsive para Services */
 @media (max-width: 768px) {
     #landscapes {
         padding: 60px 0;
     }
-    
+
     .landscapes-header {
         margin-bottom: 40px;
     }
-    
+
     .landscapes-header h2 {
         font-size: 2rem;
     }
-    
+
     .landscape-item {
         height: 400px;
         margin-bottom: 15px;
@@ -695,50 +769,62 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 576px) {
-  /* Contact: reducir foto y texto para que quepan juntos */
-  #contact .contact-content h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  #contact .contact-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-  }
-  #contact .contact-text p,
-  #contact .contact-text-info {
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-  #contact .contact-image img {
-    max-width: 120px;
-    height: 120px;
-    border-radius: 50%;
-  }
-  #contact .contact-content {
-    padding: 10px 5px;
-  }
-  #contact .contact-image {
-    padding: 10px 5px;
-    margin-top: 10px;
-  }
-  #contact .contact-overlay-content .row {
-    flex-direction: column;
-    align-items: center;
-  }
+
+    /* Contact: reducir foto y texto para que quepan juntos */
+    #contact .contact-content h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    #contact .contact-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    #contact .contact-text p,
+    #contact .contact-text-info {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    #contact .contact-image img {
+        max-width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    #contact .contact-content {
+        padding: 10px 5px;
+    }
+
+    #contact .contact-image {
+        padding: 10px 5px;
+        margin-top: 10px;
+    }
+
+    #contact .contact-overlay-content .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* Why UGC: iconos de porcentaje completos en móvil */
     .stats-item {
         padding: 30px 10px;
     }
+
     .progress-svg {
         width: 120px;
         height: 120px;
     }
+
     .progress-number {
         font-size: 1.4rem;
     }
+
     .progress-symbol {
         font-size: 1rem;
     }
+
     .landscape-item {
         height: 350px;
     }
@@ -787,10 +873,12 @@ h1, h2, h3, h4, h5, h6 {
 #drone .drone-video-container video::-webkit-media-controls-mute-button {
     display: none !important;
 }
+
 #drone .drone-video-container video::-moz-media-controls-volume-slider,
 #drone .drone-video-container video::-moz-media-controls-mute-button {
     display: none !important;
 }
+
 #drone .drone-video-container video::-ms-media-controls-volume-slider,
 #drone .drone-video-container video::-ms-media-controls-mute-button {
     display: none !important;
@@ -816,20 +904,20 @@ h1, h2, h3, h4, h5, h6 {
     #drone {
         padding: 60px 0;
     }
-    
+
     .drone-header {
         margin-bottom: 40px;
     }
-    
+
     .drone-header h2 {
         font-size: 2rem;
     }
-    
+
     .drone-video-container {
         height: 300px;
         border-radius: 15px;
     }
-    
+
     .drone-video-container video {
         border-radius: 15px;
     }
@@ -889,22 +977,22 @@ h1, h2, h3, h4, h5, h6 {
     #photos {
         padding: 60px 0;
     }
-    
+
     .photos-header {
         margin-bottom: 40px;
     }
-    
+
     .photos-header h2 {
         font-size: 2rem;
         color: #ffffff;
     }
-    
+
     .photo-item {
         height: 300px;
         margin-bottom: 20px;
         border-radius: 15px;
     }
-    
+
     .photo-item img {
         border-radius: 15px;
     }
@@ -961,7 +1049,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Estilo específico para videos verticales en restaurants */
 .restaurant-item.vertical-video {
-    height: 500px; /* Más altos que los videos horizontales */
+    height: 500px;
+    /* Más altos que los videos horizontales */
 }
 
 /* Ocultar botón de pantalla completa en videos de restaurants */
@@ -978,23 +1067,24 @@ h1, h2, h3, h4, h5, h6 {
     #restaurants {
         padding: 60px 0;
     }
-    
+
     .restaurants-header {
         margin-bottom: 40px;
     }
-    
+
     .restaurants-header h2 {
         font-size: 2rem;
     }
-    
+
     .restaurant-item {
         height: 300px;
         margin-bottom: 20px;
         border-radius: 15px;
     }
-    
+
     .restaurant-item.vertical-video {
-        height: 400px; /* Más altos en tablet también */
+        height: 400px;
+        /* Más altos en tablet también */
     }
 
     .restaurant-item video {
@@ -1006,9 +1096,10 @@ h1, h2, h3, h4, h5, h6 {
     .restaurant-item {
         height: 250px;
     }
-    
+
     .restaurant-item.vertical-video {
-        height: 350px; /* Más altos en móvil también */
+        height: 350px;
+        /* Más altos en móvil también */
     }
 }
 
@@ -1058,7 +1149,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Estilo específico para videos verticales en hoteles */
 .hotel-item.vertical-video {
-    height: 500px; /* Misma altura que los videos de restaurants */
+    height: 500px;
+    /* Misma altura que los videos de restaurants */
 }
 
 /* Responsive para Hotels */
@@ -1066,26 +1158,27 @@ h1, h2, h3, h4, h5, h6 {
     #hotels {
         padding: 25px 0;
     }
-    
+
     .hotels-header {
         margin-bottom: 40px;
     }
-    
+
     .hotels-header h2 {
         font-size: 2rem;
         color: #ffffff;
     }
-    
+
     .hotel-item {
         height: 300px;
         margin-bottom: 20px;
         border-radius: 15px;
     }
-    
+
     .hotel-item.vertical-video {
-        height: 400px; /* Misma altura que restaurants en tablet */
+        height: 400px;
+        /* Misma altura que restaurants en tablet */
     }
-    
+
     .hotel-item video {
         border-radius: 15px;
     }
@@ -1095,9 +1188,10 @@ h1, h2, h3, h4, h5, h6 {
     .hotel-item {
         height: 250px;
     }
-    
+
     .hotel-item.vertical-video {
-        height: 350px; /* Misma altura que restaurants en móvil */
+        height: 350px;
+        /* Misma altura que restaurants en móvil */
     }
 }
 
@@ -1124,11 +1218,11 @@ h1, h2, h3, h4, h5, h6 {
     #experiences {
         padding: 25px 0;
     }
-    
+
     .experiences-header {
         margin-bottom: 40px;
     }
-    
+
     .experiences-header h2 {
         font-size: 2rem;
     }
@@ -1177,22 +1271,22 @@ h1, h2, h3, h4, h5, h6 {
     #devices {
         padding: 30px 0 60px 0;
     }
-    
+
     .devices-content {
         padding: 10px 20px;
         text-align: center;
     }
-    
+
     .devices-content h2 {
         font-size: 2rem;
         margin-bottom: 20px;
     }
-    
+
     .devices-text p {
         font-size: 1.1rem;
         margin-bottom: 25px;
     }
-    
+
     .devices-image {
         padding: 10px 20px;
         margin-bottom: 20px;
@@ -1342,43 +1436,43 @@ h1, h2, h3, h4, h5, h6 {
     .contact-content-wrapper {
         padding: 30px 0 60px 0;
     }
-    
+
     .contact-content {
         padding: 10px 20px;
         text-align: center;
     }
-    
+
     .contact-content h2 {
         font-size: 2.8rem;
         margin-bottom: 15px;
     }
-    
+
     .contact-content h3 {
         font-size: 1.8rem;
         margin-bottom: 20px;
     }
-    
+
     .contact-text p {
         font-size: 1.1rem;
         margin-bottom: 25px;
     }
-    
+
     .contact-image {
         padding: 10px 20px;
         margin-top: 20px;
     }
-    
+
     .contact-info {
         margin-top: 30px;
     }
-    
+
     .contact-icon {
         width: 45px;
         height: 45px;
         font-size: 1.6rem;
         margin-right: 15px;
     }
-    
+
     .contact-text-info {
         font-size: 1.3rem;
     }
@@ -1386,7 +1480,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar principal */
 #navbar-principal {
-    background-color: #b8c4dc; /* Color personalizado */
+    background-color: #b8c4dc;
+    /* Color personalizado */
 }
 
 #navbar-principal .nav-link {
@@ -1421,32 +1516,38 @@ h1, h2, h3, h4, h5, h6 {
 /* Sección de videos */
 .video-section {
     width: 100%;
-    position: relative; /* Necesario para posicionamiento absoluto del texto */
+    position: relative;
+    /* Necesario para posicionamiento absoluto del texto */
 }
 
 .video-container {
-    height: 100vh; /* Cambiar a altura completa de viewport */
+    height: 100vh;
+    /* Cambiar a altura completa de viewport */
     overflow: hidden;
 }
 
 .video-container video {
-    object-fit: cover; /* Volvemos a cover para eliminar bandas negras */
+    object-fit: cover;
+    /* Volvemos a cover para eliminar bandas negras */
     width: 100%;
     height: 100%;
-    object-position: center; /* Centra el recorte */
+    object-position: center;
+    /* Centra el recorte */
 }
 
 /* Responsive: En pantallas pequeñas, los videos se apilan verticalmente */
 @media (max-width: 991px) {
     .video-container {
-        height: 70vh; /* Usar viewport height para tablets */
+        height: 70vh;
+        /* Usar viewport height para tablets */
         margin-bottom: 0;
     }
 }
 
 @media (max-width: 768px) {
     .video-container {
-        height: 60vh; /* Altura reducida para móviles */
+        height: 60vh;
+        /* Altura reducida para móviles */
         margin-bottom: 0;
     }
 }
@@ -1515,18 +1616,18 @@ h1, h2, h3, h4, h5, h6 {
     .overlay-text h1 {
         font-size: 2rem;
     }
-    
+
     .overlay-text p {
         font-size: 1.2rem;
         padding: 15px 20px;
     }
-    
+
     .social-icon {
         font-size: 1.5rem;
         width: 45px;
         height: 45px;
     }
-    
+
     .social-icons {
         gap: 15px;
     }
@@ -1580,92 +1681,98 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Proporción 9:16 para todos los vídeos y fotos excepto el vídeo de drone en móvil */
 @media (max-width: 576px) {
-  /* Home videos: sin margen lateral, ocupan toda la pantalla */
-  .video-section .video-container video {
-    width: 100vw !important;
-    height: 100vh !important;
-    aspect-ratio: 9/16;
-    object-fit: cover;
-    border-radius: 0 !important;
-    display: block;
-    max-width: 100vw !important;
-    max-height: 100vh !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-  }
-  /* Resto de vídeos y fotos verticales con margen */
-  .landscape-item video,
-  .restaurant-item.vertical-video video,
-  .photo-item img,
-  .hotel-item.vertical-video video {
-    width: calc(100vw - 32px) !important;
-    height: 100vh !important;
-    aspect-ratio: 9/16;
-    object-fit: cover;
-    border-radius: 12px !important;
-    display: block;
-    max-width: calc(100vw - 32px) !important;
-    max-height: 100vh !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  }
-  .photo-item img {
-    width: calc(100vw - 32px) !important;
-    height: 100vh !important;
-    aspect-ratio: 9/16;
-    object-fit: cover;
-    border-radius: 12px !important;
-    display: block;
-    max-width: calc(100vw - 32px) !important;
-    max-height: 100vh !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  }
-  /* Excluir el video de drone */
-  #drone .drone-video-container video {
-    aspect-ratio: unset;
-    height: 250px;
-    max-height: unset;
-    border-radius: 20px;
-  }
 
-  /* Home: contenedor ocupa todo el ancho, sin margen */
-  .video-section .video-container {
-    width: 100vw !important;
-    height: 100vh !important;
-    aspect-ratio: 9/16;
-    min-height: 100vh !important;
-    max-height: 100vh !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    overflow: hidden;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  /* Otros verticales: margen lateral */
-  .landscape-item,
-  .photo-item,
-  .restaurant-item.vertical-video,
-  .hotel-item.vertical-video {
-    width: calc(100vw - 32px) !important;
-    height: 100vh !important;
-    aspect-ratio: 9/16;
-    min-height: 100vh !important;
-    max-height: 100vh !important;
-    border-radius: 12px !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-    overflow: hidden;
-    margin: 0 auto !important;
-    padding: 0 !important;
-  }
-  /* Excluir el contenedor de drone */
-  #drone .drone-video-container {
-    aspect-ratio: unset;
-    height: 250px !important;
-    max-height: unset;
-    border-radius: 20px;
-  }
+    /* Home videos: sin margen lateral, ocupan toda la pantalla */
+    .video-section .video-container video {
+        width: 100vw !important;
+        height: 100vh !important;
+        aspect-ratio: 9/16;
+        object-fit: cover;
+        border-radius: 0 !important;
+        display: block;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+    }
+
+    /* Resto de vídeos y fotos verticales con margen */
+    .landscape-item video,
+    .restaurant-item.vertical-video video,
+    .photo-item img,
+    .hotel-item.vertical-video video {
+        width: calc(100vw - 32px) !important;
+        height: 100vh !important;
+        aspect-ratio: 9/16;
+        object-fit: cover;
+        border-radius: 12px !important;
+        display: block;
+        max-width: calc(100vw - 32px) !important;
+        max-height: 100vh !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    }
+
+    .photo-item img {
+        width: calc(100vw - 32px) !important;
+        height: 100vh !important;
+        aspect-ratio: 9/16;
+        object-fit: cover;
+        border-radius: 12px !important;
+        display: block;
+        max-width: calc(100vw - 32px) !important;
+        max-height: 100vh !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    }
+
+    /* Excluir el video de drone */
+    #drone .drone-video-container video {
+        aspect-ratio: unset;
+        height: 250px;
+        max-height: unset;
+        border-radius: 20px;
+    }
+
+    /* Home: contenedor ocupa todo el ancho, sin margen */
+    .video-section .video-container {
+        width: 100vw !important;
+        height: 100vh !important;
+        aspect-ratio: 9/16;
+        min-height: 100vh !important;
+        max-height: 100vh !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        overflow: hidden;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Otros verticales: margen lateral */
+    .landscape-item,
+    .photo-item,
+    .restaurant-item.vertical-video,
+    .hotel-item.vertical-video {
+        width: calc(100vw - 32px) !important;
+        height: 100vh !important;
+        aspect-ratio: 9/16;
+        min-height: 100vh !important;
+        max-height: 100vh !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+        overflow: hidden;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    /* Excluir el contenedor de drone */
+    #drone .drone-video-container {
+        aspect-ratio: unset;
+        height: 250px !important;
+        max-height: unset;
+        border-radius: 20px;
+    }
 }
