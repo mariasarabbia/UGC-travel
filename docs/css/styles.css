@@ -81,6 +81,29 @@
     }
 }
 
+.ugc-photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ugc-photo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.ugc-photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.ugc-photo-item:hover img {
+    transform: scale(1.05);
+}
 
 html,
 body {
@@ -698,7 +721,7 @@ h6 {
 /* Sección Services */
 #services {
     padding: 40px 0;
-    background-color: #f8f9fa;
+    background-color: #b3c5d8;
 }
 
 .services-header {
@@ -708,7 +731,7 @@ h6 {
 
 .services-header h2 {
     font-size: 2.5rem;
-    color: #5f5a4e;
+    color: #ffffff;
     margin-bottom: 0;
 }
 
@@ -833,7 +856,7 @@ h6 {
 /* Sección Drone */
 #drone {
     padding: 40px 0;
-    background-color: #f8f9fa;
+    background-color: #b3c5d8;
 }
 
 .drone-header {
@@ -843,7 +866,7 @@ h6 {
 
 .drone-header h2 {
     font-size: 2.5rem;
-    color: #5f5a4e;
+    color: #ffffff;
     margin-bottom: 0;
 }
 
@@ -932,7 +955,7 @@ h6 {
 /* Sección Photos */
 #photos {
     padding: 40px 0;
-    background-color: #b3c5d8;
+    background-color: #f8f9fa;
 }
 
 .photos-header {
@@ -942,7 +965,7 @@ h6 {
 
 .photos-header h2 {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #5f5a4e;
     margin-bottom: 0;
 }
 
@@ -1106,7 +1129,7 @@ h6 {
 /* Sección Hotels */
 #hotels {
     padding: 30px 0;
-    background-color: #b3c5d8;
+    background-color: #f8f9fa;
     min-height: 100vh;
 }
 
@@ -1117,7 +1140,7 @@ h6 {
 
 .hotels-header h2 {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #5f5a4e;
     margin-bottom: 0;
 }
 
@@ -1480,37 +1503,84 @@ h6 {
 
 /* Navbar principal */
 #navbar-principal {
-    background-color: #b8c4dc;
-    /* Color personalizado */
-}
-
-#navbar-principal .nav-link {
-    color: black !important;
+    background-color: #f7f3ee;
+    padding: 10px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    border-radius: 4px;
+    z-index: 1030;
 }
 
 #navbar-principal .navbar-nav {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* Distribuye los enlaces por todo el ancho */
+    gap: 0;
+}
+
+#navbar-principal .nav-link {
+    color: #5f5a4e !important;
+    font-family: 'FuenteTitulos', Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.7rem;
+    position: relative;
+    padding: 6px 6px !important;
+    transition: color 0.3s ease;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+/* Animación de línea al hacer hover */
+#navbar-principal .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: #5f5a4e;
+    transition: width 0.3s ease;
 }
 
 #navbar-principal .nav-link:hover {
-    font-weight: bold;
-    transition: all 0.3s ease;
+    color: #3b3730 !important;
+    font-weight: normal;
+}
+
+#navbar-principal .nav-link:hover::after,
+#navbar-principal .nav-link.active::after {
+    width: 60%;
 }
 
 #navbar-principal .nav-link.active {
-    color: #000000 !important;
-    font-weight: bold;
+    color: #3b3730 !important;
+    font-weight: normal;
 }
 
 #navbar-principal .navbar-toggler {
-    border-color: black;
+    border: none;
+    color: #5f5a4e;
+}
+
+#navbar-principal .navbar-toggler:focus {
+    box-shadow: none;
 }
 
 #navbar-principal .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%235f5a4e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Ajustes menú idioma en navbar */
+#languageDropdown {
+    color: #5f5a4e !important;
+    font-size: 1.2rem !important;
+    padding-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+#languageDropdown:hover {
+    transform: scale(1.1);
 }
 
 /* Sección de videos */
