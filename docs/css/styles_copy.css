@@ -1359,21 +1359,6 @@ h6 {
         max-height: unset;
         border-radius: 20px;
     }
-
-    .footer {
-        background-color: #000;
-        padding: 40px 0;
-        margin-top: 80px;
-    }
-
-    .footer p {
-        margin: 0;
-        text-align: center;
-        color: #fff;
-        font-size: 0.9rem;
-        letter-spacing: 0.5px;
-        opacity: 0.85;
-    }
 }
 
 .hotel-card{
@@ -1399,4 +1384,331 @@ h6 {
 
 .restaurant-item{
     width:100%;
+}
+
+.footer {
+        background-color: #000;
+    }
+
+    .footer p {
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+        opacity: 0.85;
+    }
+
+
+    .devices-grid{
+
+    width:650px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,150px);
+
+    align-items:center;
+    justify-items:center;
+}
+
+.device img{
+
+    width:110px;
+    transition:.3s;
+}
+
+.device img:hover{
+
+    transform:scale(1.08);
+}
+
+/* Posiciones */
+
+.top-left{
+    grid-column:1;
+    grid-row:1;
+    justify-self:end;
+}
+
+.top-right{
+    grid-column:3;
+    grid-row:1;
+    justify-self:start;
+}
+
+.middle-left{
+    grid-column:1;
+    grid-row:2;
+}
+
+.iphone{
+    grid-column:2;
+    grid-row:2;
+}
+
+.iphone img{
+    width:150px;
+}
+
+.middle-right{
+    grid-column:3;
+    grid-row:2;
+}
+
+.bottom-left{
+    grid-column:1;
+    grid-row:3;
+    justify-self:end;
+}
+
+.bottom-right{
+    grid-column:3;
+    grid-row:3;
+    justify-self:start;
+}
+
+/*=========================================
+        CREATOR GEAR
+=========================================*/
+
+#creator-gear{
+
+    padding:40px 0;
+
+    background:
+    radial-gradient(circle at center,
+    #777063 0%,
+    #686156 45%,
+    #5b554b 100%);
+
+}
+
+/*================ HEADER ================*/
+
+.gear-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.gear-header h2{
+
+    font-size:58px;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+
+}
+
+.gear-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#dadada;
+
+}
+
+.gear-divider{
+
+    width:80px;
+
+    height:1px;
+
+    background:#b6aea3;
+
+    margin:35px auto 0;
+
+}
+
+/*================ GRID ================*/
+
+.gear-grid{
+
+    width:700px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    grid-template-rows:repeat(3,200px);
+
+    justify-items:center;
+
+    align-items:center;
+
+}
+
+/*================ CARD ================*/
+
+.gear-item{
+
+    width:170px;
+
+    padding:20px 10px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.03);
+
+    transition:.35s;
+
+}
+
+.gear-item:hover{
+
+    background:rgba(255,255,255,.06);
+
+    transform:translateY(-8px);
+
+}
+
+/*================ IMAGES ================*/
+
+.gear-item img{
+
+    width:105px;
+
+    transition:.35s;
+
+}
+
+.gear-item:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.iphone img{
+
+    width:145px;
+
+}
+
+/*================ TEXT ================*/
+
+.gear-item span{
+
+    display:block;
+
+    margin-top:18px;
+
+    color:white;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+    font-weight:500;
+
+}
+
+.gear-item small{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#bfbfbf;
+
+    font-size:13px;
+
+    letter-spacing:.4px;
+
+}
+
+/*================ POSITIONS ================*/
+
+.top-left{
+
+    grid-column:1;
+    grid-row:1;
+
+    justify-self:end;
+
+}
+
+.top-right{
+
+    grid-column:3;
+    grid-row:1;
+
+    justify-self:start;
+
+}
+
+.middle-left{
+
+    grid-column:1;
+    grid-row:2;
+
+}
+
+.iphone{
+
+    grid-column:2;
+    grid-row:2;
+
+}
+
+.middle-right{
+
+    grid-column:3;
+    grid-row:2;
+
+}
+
+.bottom-left{
+
+    grid-column:1;
+    grid-row:3;
+
+    justify-self:end;
+
+}
+
+.bottom-right{
+
+    grid-column:3;
+    grid-row:3;
+
+    justify-self:start;
+
+}
+
+/*================ QUOTE ================*/
+
+.gear-quote{
+
+    max-width:620px;
+
+    margin:80px auto 0;
+
+    text-align:center;
+
+    color:#dddddd;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+    opacity:.9;
+
 }

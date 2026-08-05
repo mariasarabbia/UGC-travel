@@ -63,8 +63,8 @@
                         <a class="nav-link" href="#why-ugc">Why UGC?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#devices"
-                            onclick="scrollToCenter('devices'); return false;">Devices</a>
+                        <a class="nav-link" href="#creator-gear"
+                            onclick="scrollToCenter('creator-gear'); return false;">Gear</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#offered-services">Offered Services</a>
@@ -93,30 +93,36 @@
         <section class="video-section">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="video-container">
-                            <video class="w-100 h-100" autoplay muted loop playsinline preload="auto">
-                                <source src="media/video/cascada_islandia.mp4" type="video/mp4">
-                                Tu navegador no soporta el elemento video.
-                            </video>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="video-container">
-                            <video class="w-100 h-100" autoplay muted loop playsinline preload="auto">
-                                <source src="media/video/maria_pelo.mp4" type="video/mp4">
-                                Tu navegador no soporta el elemento video.
-                            </video>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="video-container">
-                            <video class="w-100 h-100" autoplay muted loop playsinline preload="auto">
-                                <source src="media/video/montana_islandia.mp4" type="video/mp4">
-                                Tu navegador no soporta el elemento video.
-                            </video>
-                        </div>
-                    </div>
+                    <!-- Vídeo izquierdo (solo escritorio) -->
+        <div class="col-lg-4 d-none d-lg-block">
+            <div class="video-container">
+                <video class="w-100 h-100" autoplay muted loop playsinline preload="auto">
+                    <source src="media/video/cascada_islandia.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento video.
+                </video>
+            </div>
+        </div>
+
+        <!-- Vídeo central (siempre visible) -->
+        <div class="col-lg-4 col-12">
+            <div class="video-container">
+                <video class="w-100 h-100" autoplay muted loop playsinline preload="auto">
+                    <source src="media/video/maria_pelo.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento video.
+                </video>
+            </div>
+        </div>
+
+        <!-- Vídeo derecho (solo escritorio) -->
+        <div class="col-lg-4 d-none d-lg-block">
+            <div class="video-container">
+                <video class="w-100 h-100" autoplay muted loop playsinline preload="auto">
+                    <source src="media/video/montana_islandia.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento video.
+                </video>
+            </div>
+        </div>
+
                 </div>
             </div>
 
@@ -616,53 +622,81 @@
         </div>
     </div>
     <!-- Fin del contenedor de Why UGC? -->
+   
+   <!-- Contenedor de Creator GEAR -->
 
-    <!-- Contenedor de My Recording Devices -->
-    <div id="devices" class="seccion-pagina">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Columna izquierda - Imagen -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="devices-image">
-                        <img src="media/images/yop-islandia-barranco.JPG" alt="Recording Devices"
-                            class="img-fluid rounded">
-                    </div>
-                </div>
+<div id="creator-gear" class="seccion-pagina">
 
-                <!-- Columna derecha - Texto -->
-                <div class="col-lg-8 col-md-12">
-                    <div class="devices-content">
-                        <h2>MY RECORDING DEVICES</h2>
-                        <div class="devices-text">
-                            <p>I shoot most of my content with my iPhone 17 Pro Max, which allows me to create
-                                high-quality
-                                visuals quickly and naturally, keeping the content relatable while still professional.
-                            </p>
+    <div class="container">
 
-                            <p>For travel, landscapes, and accommodation features, I love adding drone footage to give
-                                brands that cinematic, scroll-stopping perspective.</p>
+        <div class="gear-header">
 
-                            <p>My Nikon digital camera helps me create retro-style photos with personality and a
-                                nostalgic vibe that audiences connect with.</p>
+            <h2>THE GEAR BEHIND MY CONTENT</h2>
 
-                            <p>When I need dynamic, action-driven shots, I use my DJI Osmo Action 5 Pro to capture
-                                sharp, stable footage even on the move.</p>
+            <p>
+                Everything I use to create cinematic content for hotels,
+                experiences and lifestyle brands.
+            </p>
 
-                            <p>For more polished and cinematic storytelling, I film with the DJI Osmo Pocket 3,
-                                achieving smooth motion and a more elevated production feel.</p>
+            <div class="gear-divider"></div>
 
-                            <p>To make sure the sound quality matches the visuals, I use DJI Mic Mini wireless
-                                microphones for clear, crisp audio in voiceovers, interviews, and real-life scenes.</p>
-
-                            <p>I also create alongside my partner, Álvaro, who helps me capture creative angles and
-                                behind-the-scenes moments that make each project feel natural and engaging.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+
+        <div class="gear-grid">
+
+            <div class="gear-item top-left">
+                <img src="media/images/recording_devices/Action-5-Pro.png" alt="DJI Osmo Action 5 Pro">
+                <span>DJI Osmo Action 5 Pro</span>
+                <small>Action Camera</small>
+            </div>
+
+            <div class="gear-item top-right">
+                <img src="media/images/recording_devices/DJI-Mic-Mini.avif" alt="DJI Mic Mini">
+                <span>DJI Mic Mini</span>
+                <small>Wireless Audio</small>
+            </div>
+
+            <div class="gear-item middle-left">
+                <img src="media/images/recording_devices/dron.png" alt="DJI Mini 4 Pro">
+                <span>DJI Mini 3 Pro</span>
+                <small>Drone</small>
+            </div>
+
+            <div class="gear-item iphone">
+                <img src="media/images/recording_devices/iphone-removebg-preview.png" alt="iPhone 17 Pro Max">
+                <span>iPhone 17 Pro Max</span>
+                <small>Main Camera</small>
+            </div>
+
+            <div class="gear-item middle-right">
+                <img src="media/images/recording_devices/osmopocket-removebg-preview.png" alt="DJI Osmo Pocket 3">
+                <span>DJI Osmo Pocket 3</span>
+                <small>Stabilized Camera</small>
+            </div>
+
+            <div class="gear-item bottom-left">
+                <img src="media/images/recording_devices/tripode-removebg-preview.png" alt="Tripod">
+                <span>Tripod</span>
+                <small>Stable Shots</small>
+            </div>
+
+            <div class="gear-item bottom-right">
+                <img src="media/images/recording_devices/foco.png" alt="LED Light">
+                <span>LED Light</span>
+                <small>Lighting</small>
+            </div>
+
+        </div>
+
+        <p class="gear-quote">
+            Powered by creativity, not just equipment.
+        </p>
+
     </div>
-    <!-- Fin del contenedor de My Recording Devices -->
+
+</div>
+
+   <!-- FIN Contenedor de Creator GEAR -->
 
     <!-- Contenedor de Offered Services -->
     <div id="offered-services" class="seccion-pagina">
@@ -794,7 +828,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>Designed & developed by María Sarabia © 2026</p>
+            <p>Designed & developed by María Sarabia & Álvaro Romero © 2026</p>
         </div>
     </footer>
 
