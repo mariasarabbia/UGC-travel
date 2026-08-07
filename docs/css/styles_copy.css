@@ -1712,3 +1712,121 @@ h6 {
     opacity:.9;
 
 }
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media (max-width: 991px){
+
+    #creator-gear{
+
+        padding:80px 20px;
+
+    }
+
+    /* Header */
+
+    .gear-header h2{
+
+        font-size:34px;
+
+        line-height:1.2;
+
+    }
+
+    .gear-header p{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+        max-width:100%;
+
+    }
+
+    /* Grid */
+
+    .gear-grid{
+
+        width:100%;
+
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows:auto;
+        gap:25px 20px;
+
+    }
+
+    /* Quitamos todas las posiciones del escritorio */
+
+    .top-left,
+    .top-right,
+    .middle-left,
+    .middle-right,
+    .bottom-left,
+    .bottom-right,
+    .iphone{
+
+        grid-column:auto;
+        grid-row:auto;
+        justify-self:center;
+
+    }
+
+    /* El iPhone ocupa toda la fila */
+
+    .iphone{
+
+        grid-column:1 / 3;
+
+        order:-1;
+
+    }
+
+    .gear-item{
+
+        width:100%;
+
+        max-width:170px;
+
+        padding:18px 12px;
+
+    }
+
+    .gear-item img{
+
+        width:90px;
+
+    }
+
+    .iphone img{
+
+        width:130px;
+
+    }
+
+    .gear-item span{
+
+        font-size:14px;
+
+    }
+
+    .gear-item small{
+
+        font-size:12px;
+
+    }
+
+    .gear-quote{
+
+        margin-top:50px;
+
+        font-size:16px;
+
+        line-height:1.6;
+
+        padding:0 15px;
+
+    }
+
+}
